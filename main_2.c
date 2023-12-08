@@ -17,7 +17,7 @@ int main() {
   number_2 = ones * 10000 + tens * 1000 + hundreds * 100 + thousands * 10 + tenthousands;
 
   // 判斷是否為回文
-  if (ones == tenthousands && tens == thousands) {
+  if (number == number_2) {
     printf("%d 是回文。\n", number);
   } else {
     printf("%d 不是回文。\n", number);
