@@ -14,6 +14,8 @@ int main() {
   hundreds = (number / 100) % 10;
   thousands = (number / 1000) % 10;
   tenthousands = (number / 10000) % 10;
+  
+  // 獲取新的五位數
   number_2 = ones * 10000 + tens * 1000 + hundreds * 100 + thousands * 10 + tenthousands;
 
   // 判斷是否為回文
