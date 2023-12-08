@@ -1,25 +1,26 @@
 #include <stdio.h>
 
 int main() {
-  // «Å§iÅÜ¼Æ
-  int number, ones, tens, hundreds, thousands, tenthousands;
+  // å®£å‘Šè®Šæ•¸
+  int number, number_2, ones, tens, hundreds, thousands, tenthousands;
 
-  // ¿é¤J¤­¦ì¼Æ
-  printf("½Ğ¿é¤J¤@­Ó¤­¦ì¼Æ¡G");
+  // è¼¸å…¥äº”ä½æ•¸
+  printf("è«‹è¼¸å…¥ä¸€å€‹äº”ä½æ•¸ï¼š");
   scanf("%d", &number);
 
-  // ¨ú¥X¦U¦ì¼Æ
+  // å–å‡ºå„ä½æ•¸
   ones = number % 10;
   tens = (number / 10) % 10;
   hundreds = (number / 100) % 10;
   thousands = (number / 1000) % 10;
   tenthousands = (number / 10000) % 10;
+  number_2 = ones * 10000 + tens * 1000 + hundreds * 100 + thousands * 10 + tenthousands;
 
-  // §PÂ_¬O§_¬°¦^¤å
+  // åˆ¤æ–·æ˜¯å¦ç‚ºå›æ–‡
   if (ones == tenthousands && tens == thousands) {
-    printf("%d ¬O¦^¤å¡C\n", number);
+    printf("%d æ˜¯å›æ–‡ã€‚\n", number);
   } else {
-    printf("%d ¤£¬O¦^¤å¡C\n", number);
+    printf("%d ä¸æ˜¯å›æ–‡ã€‚\n", number);
   }
 
   return 0;
